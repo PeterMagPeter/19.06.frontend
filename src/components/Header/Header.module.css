@@ -1,0 +1,12 @@
+.headerStack {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .msAuto {
+    margin-left: auto !important;
+    display: flex;
+    align-items: center;
+  }
+  

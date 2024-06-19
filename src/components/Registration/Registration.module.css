@@ -1,0 +1,38 @@
+/* html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  } */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". Logo ."
+    ". RegistrationForm ."
+    ". . .";
+  justify-items: stretch;
+  align-items: start;
+  min-height: 100vh !important;
+  min-width: 100% !important;
+  background-color: rgb(47, 75, 88);
+}
+
+.RegistrationForm {
+  grid-area: RegistrationForm;
+}
+.Logo {
+  grid-area: Logo;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100%;
+  align-items: center;
+}
+
+.redBorder {
+  border: 2px solid red; /* Roter Rahmen mit einer Breite von 2 Pixel */
+}

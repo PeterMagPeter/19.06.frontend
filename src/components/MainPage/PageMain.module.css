@@ -1,0 +1,83 @@
+.mainPage {
+  background-image: url("../../assets/pictures/background.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.mainContent {
+  height: 100%;
+  width: 100%;
+}
+
+.buttonsContainer {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.customButton {
+  margin: 10px 0;
+  width: 70%; /* Anpassen der Breite der Buttons */
+  max-width: 250px; /* Maximalbreite der Buttons */
+  height: 60px; /* Höhe der Buttons */
+  background-color: rgba(255, 255, 255, 0.3); /* Transparente Hintergrundfarbe */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Halbtransparente Rahmenfarbe */
+  color: white; /* Textfarbe */
+  font-size: 1.2rem; /* Schriftgröße */
+}
+
+.customButton:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Etwas weniger transparent beim Hover */
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes sure your column takes up the full height of the viewport */
+}
+
+.ranking {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.ranking h2,
+.ranking p {
+  margin: 0;
+  padding: 5px;
+}
+
+.rankingTable {
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+}
+
+.rankingTable th,
+.rankingTable td {
+  padding: 5px;
+  text-align: left;
+}
+
+.rankingTable thead {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rankingTable tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rankingTable tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.2);
+}
